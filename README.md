@@ -130,7 +130,11 @@ The guardrails I set:
 - **I checked by eye:** I compared screenshots against the hand-calculated answer tables.
 - **I kept control of publishing:** every change came as a separate branch and pull request that I reviewed and merged myself (30 pull requests); the agent could not push.
 
-The project went from first commit to version 1.0.1 between 2026-10-09 and 2026-10-14 (85 commits).
+The project went from first commit to version 1.0.1 between 2026-10-09 and 2026-10-14 (85 commits). The short calendar time has three reasons:
+
+- **A tested core was reused.** Jalali dates, number parsing, the page structure, the batched calculation with its lock, and the whole test tooling came from my earlier WooCommerce plugin, renamed into this plugin's own namespace.
+- **The answers came before the code.** Four test stores with hand-calculated answer tables were written and approved before any code, and every test compares against them.
+- **Every step had to pass everything.** The full check suite (tests, coding standards, static analysis, Plugin Check) had to pass before the next step could begin.
 
 ## 9. Demo & proof
 
@@ -143,6 +147,7 @@ The project went from first commit to version 1.0.1 between 2026-10-09 and 2026-
 
 **Shahin Parsa** (شاهین پارسا)
 
+- Email: [raymand.studio@gmail.com](mailto:raymand.studio@gmail.com)
 - LinkedIn: [linkedin.com/in/shahin-parsa](https://www.linkedin.com/in/shahin-parsa/)
 - Telegram: [@S3DEngineerP](https://t.me/S3DEngineerP)
 
